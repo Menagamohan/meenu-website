@@ -1,0 +1,17 @@
+<form id="my form">
+    <input type="text" name="Username" value="Menaga"/>
+    <input type="text" name="Username" value="Rathi"/>
+    <input type="text" name="Password" value="menagamohan@gmail.com"/>
+    <button type="submit">Submit</button>
+</form>
+<script>
+    var UsernameElements=document.getElementsByName("Username");
+    for(var i=0; i<UsernameElement.lenth;i++)
+    {
+        console.log(usernameElements[i].value)
+    }
+    if(usernameElements.length>0)
+    {
+        usernameElements[0].value='modified'
+    }
+</script>

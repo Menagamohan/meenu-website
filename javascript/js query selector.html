@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .Example
+            {
+                background-color: blue;
+            }
+            #unique
+            {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Example">FirstElement</div>
+        <div class="Example">SecondElement</div>
+        <div id="unique">SecondElement</div>
+        <script>
+            var FirstElm=document.querySelectorAll('.Example')
+            if(FirstElm)
+            {
+                console.log("FirstElement is::",FirstElm)
+            }
+            var uniqueElm=document.querySelector('#unique')
+            if(uniqueElm)
+            {
+                console.log('SecondElement is::',uniqueElm)
+            }
+        </script>
+    </body>
+</html>
