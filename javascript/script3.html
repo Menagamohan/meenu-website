@@ -1,0 +1,27 @@
+<!-- nested -->
+<!DOCTYPE html>
+<html>
+<head> 
+    <title></title>
+</head>
+<body>
+    <script>
+        var bns;
+        var noofdays = parseInt(prompt("Enter the noofdays::"));
+        if (noofdays >= 30) {
+            var salary = parseInt(prompt("Enter the salary::"));
+            if (salary >= 70000) {
+                bns = salary + 5000;
+                document.write("Your salary is: " + bns);
+            } else {
+                bns = salary + 4000;
+                document.write("Your salary is: " + bns);
+            }
+        } else {
+            document.write("Not eligible");
+        }
+    </script>
+</body>
+</html>
+
+ 
