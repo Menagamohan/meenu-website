@@ -1,0 +1,10 @@
+<body>
+    Enter the username:<input type="text" id="fname" onfocusin="myfun()">
+    <script>
+        function myfun()
+        {
+            let x=document.getElementById("fname");
+            x.value=x.value.touppercase();
+        }
+    </script>
+</body>
