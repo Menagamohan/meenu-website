@@ -1,0 +1,13 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color","yellow");
+        })
+    });
+</script>
+<body>
+    Name:<input type="text" id="name"><br><br>
+    Email:<input type="text" id="Email">
+    <input type="button" value="login">
+</body>
