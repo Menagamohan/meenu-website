@@ -1,0 +1,18 @@
+<h1>Based On Index</h1>
+<p id="d1"></p>
+<p id="d2"></p>
+<h1>Based On Given Index</h1>
+<p id="d3"></p>
+<script>
+    const text='["mohan","menaga","sathish"]';
+    const myarr=JSON.parse(text);
+    document.getElementById("d1").innerHTML=myarr[0];
+    document.getElementById("d2").innerHTML=myarr[1];
+    function showData()
+    {
+        let x=document.getElementById("show").value;
+        document.getElementById("d3").innerHTML=myarr[x];
+    }
+</script>
+<button type="button" onclick="showData()">showData</button>
+<input type="number" id="show">

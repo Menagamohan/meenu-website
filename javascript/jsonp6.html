@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2>Convert a string in a date object</h2>
+        <p id="demo"></p>
+        <script>
+            const text='{"Name":"Menaga","birth":"2002-07-13","City":"Nkl"}'
+            const obj=JSON.parse(text,function(key,value){
+                if(key=="birth"){
+                    return new Date(value);
+                }else{
+                    return value;
+                }
+            });
+            document.getElementById("demo").innerHTML=obj.name+","+obj.birth;
+        </script>
+    </body>
+</html>

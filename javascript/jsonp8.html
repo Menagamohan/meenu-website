@@ -1,0 +1,10 @@
+<script>
+    // storing data
+    const myobj={Name:"Menaga",Age:"22",City:"Nkl"};
+    const myJSON=JSON.stringify(myobj)
+    localStorage.setItem("test Json",myJSON);
+    // Retrieving data
+    let obj=JSON.parse(text)
+    console.log(obj)
+    document.write(obj.name+""+obj.age+""+obj.City)
+</script>
